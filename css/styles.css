@@ -23,7 +23,15 @@ h2{
     padding: 20px;
 }
 .list{
+    height: 500px;
     overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+    width: 5px;
+}
+.list::-webkit-scrollbar-thumb{
+    background: #03A9F4;
+    border-radius: 40px;
 }
 .item{
     padding: 20px;
