@@ -66,3 +66,19 @@ h2{
     border-bottom: 2px solid #8B8B8B;
     transform: rotate(-45deg);
 }
+.item input{
+    display: none;
+}
+.item input:checked ~ p{
+    text-decoration: line-through;
+    color: #ccc;
+    font-weight: 600;
+}
+.item input:checked ~ span{
+    background: #03A9F4;
+    border: 1px solid #03A9F4;
+}
+.item input:checked ~ span::before{
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
